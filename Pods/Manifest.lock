@@ -1,0 +1,21 @@
+PODS:
+  - ImgurAnonymousAPI (1.0)
+
+DEPENDENCIES:
+  - ImgurAnonymousAPI (from `https://github.com/nolanw/ImgurAnonymousAPI.git`)
+
+EXTERNAL SOURCES:
+  ImgurAnonymousAPI:
+    :git: https://github.com/nolanw/ImgurAnonymousAPI.git
+
+CHECKOUT OPTIONS:
+  ImgurAnonymousAPI:
+    :commit: 9c4a06b6daf4cad2422976349b7d190693f87813
+    :git: https://github.com/nolanw/ImgurAnonymousAPI.git
+
+SPEC CHECKSUMS:
+  ImgurAnonymousAPI: 7a549a711eb9a006e4bf182a752f2b468d110c91
+
+PODFILE CHECKSUM: d18e02f398af6c8c36a2dcfb069aaa1d8ab7a4ee
+
+COCOAPODS: 1.8.4
