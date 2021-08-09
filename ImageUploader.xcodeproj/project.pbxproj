@@ -3,23 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C95860139BAFA4967DA090CD /* Pods_ImageUploader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100465C698B5A203CE5BA274 /* Pods_ImageUploader.framework */; };
+		F9173F0C26C05F5D00F9656D /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9173F0B26C05F5D00F9656D /* JokesViewController.swift */; };
+		F9173F0E26C0618900F9656D /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9173F0D26C0618900F9656D /* JokeModel.swift */; };
+		F9173F1026C07A4A00F9656D /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9173F0F26C07A4A00F9656D /* AccountModel.swift */; };
 		F92297B226BEF95D00EBEBD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92297B126BEF95D00EBEBD8 /* AppDelegate.swift */; };
 		F92297B426BEF95D00EBEBD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92297B326BEF95D00EBEBD8 /* SceneDelegate.swift */; };
-		F92297B626BEF95D00EBEBD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92297B526BEF95D00EBEBD8 /* ViewController.swift */; };
+		F92297B626BEF95D00EBEBD8 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92297B526BEF95D00EBEBD8 /* UploadViewController.swift */; };
 		F92297B926BEF95D00EBEBD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92297B726BEF95D00EBEBD8 /* Main.storyboard */; };
 		F92297BB26BEF96000EBEBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92297BA26BEF96000EBEBD8 /* Assets.xcassets */; };
 		F92297BE26BEF96000EBEBD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92297BC26BEF96000EBEBD8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100465C698B5A203CE5BA274 /* Pods_ImageUploader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageUploader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F1E9D5743A019918762253 /* Pods-ImageUploader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageUploader.debug.xcconfig"; path = "Target Support Files/Pods-ImageUploader/Pods-ImageUploader.debug.xcconfig"; sourceTree = "<group>"; };
+		D2B5714056DB298349241C78 /* Pods-ImageUploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageUploader.release.xcconfig"; path = "Target Support Files/Pods-ImageUploader/Pods-ImageUploader.release.xcconfig"; sourceTree = "<group>"; };
+		F9173F0B26C05F5D00F9656D /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
+		F9173F0D26C0618900F9656D /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		F9173F0F26C07A4A00F9656D /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		F92297AE26BEF95D00EBEBD8 /* ImageUploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageUploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92297B126BEF95D00EBEBD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92297B326BEF95D00EBEBD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F92297B526BEF95D00EBEBD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F92297B526BEF95D00EBEBD8 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		F92297B826BEF95D00EBEBD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F92297BA26BEF96000EBEBD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92297BD26BEF96000EBEBD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95860139BAFA4967DA090CD /* Pods_ImageUploader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EF8DA3BC0CFF41A1CA18B34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58F1E9D5743A019918762253 /* Pods-ImageUploader.debug.xcconfig */,
+				D2B5714056DB298349241C78 /* Pods-ImageUploader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A8134BF89CD62754590C35DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				100465C698B5A203CE5BA274 /* Pods_ImageUploader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F92297A526BEF95D00EBEBD8 = {
 			isa = PBXGroup;
 			children = (
 				F92297B026BEF95D00EBEBD8 /* ImageUploader */,
 				F92297AF26BEF95D00EBEBD8 /* Products */,
+				2EF8DA3BC0CFF41A1CA18B34 /* Pods */,
+				A8134BF89CD62754590C35DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +88,10 @@
 			children = (
 				F92297B126BEF95D00EBEBD8 /* AppDelegate.swift */,
 				F92297B326BEF95D00EBEBD8 /* SceneDelegate.swift */,
-				F92297B526BEF95D00EBEBD8 /* ViewController.swift */,
+				F92297B526BEF95D00EBEBD8 /* UploadViewController.swift */,
+				F9173F0B26C05F5D00F9656D /* JokesViewController.swift */,
+				F9173F0D26C0618900F9656D /* JokeModel.swift */,
+				F9173F0F26C07A4A00F9656D /* AccountModel.swift */,
 				F92297B726BEF95D00EBEBD8 /* Main.storyboard */,
 				F92297BA26BEF96000EBEBD8 /* Assets.xcassets */,
 				F92297BC26BEF96000EBEBD8 /* LaunchScreen.storyboard */,
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F92297C226BEF96000EBEBD8 /* Build configuration list for PBXNativeTarget "ImageUploader" */;
 			buildPhases = (
+				2C0D73D36AF7F64A2B72F10C /* [CP] Check Pods Manifest.lock */,
 				F92297AA26BEF95D00EBEBD8 /* Sources */,
 				F92297AB26BEF95D00EBEBD8 /* Frameworks */,
 				F92297AC26BEF95D00EBEBD8 /* Resources */,
+				F3B4814DF1277F2C24B2D22D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +167,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C0D73D36AF7F64A2B72F10C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageUploader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3B4814DF1277F2C24B2D22D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageUploader/Pods-ImageUploader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageUploader/Pods-ImageUploader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageUploader/Pods-ImageUploader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F92297AA26BEF95D00EBEBD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92297B626BEF95D00EBEBD8 /* ViewController.swift in Sources */,
+				F92297B626BEF95D00EBEBD8 /* UploadViewController.swift in Sources */,
+				F9173F1026C07A4A00F9656D /* AccountModel.swift in Sources */,
 				F92297B226BEF95D00EBEBD8 /* AppDelegate.swift in Sources */,
+				F9173F0E26C0618900F9656D /* JokeModel.swift in Sources */,
 				F92297B426BEF95D00EBEBD8 /* SceneDelegate.swift in Sources */,
+				F9173F0C26C05F5D00F9656D /* JokesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +363,7 @@
 		};
 		F92297C326BEF96000EBEBD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F1E9D5743A019918762253 /* Pods-ImageUploader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +377,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftbook.MakarovVN-HW2.10.ImageUploader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F92297C426BEF96000EBEBD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B5714056DB298349241C78 /* Pods-ImageUploader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftbook.MakarovVN-HW2.10.ImageUploader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

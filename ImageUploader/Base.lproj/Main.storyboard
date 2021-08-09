@@ -1,24 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7zC-2w-XVf">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Image uploader-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="UploadViewController" customModule="ImageUploader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="B2L-dJ-8h1">
+                                <rect key="frame" x="25.5" y="54" width="269" height="411"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SLj-IV-PeN">
+                                        <rect key="frame" x="0.0" y="0.0" width="269" height="111.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="111.5" id="jWV-Ds-hwp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="BMp-wm-xV1">
+                                        <rect key="frame" x="0.0" y="153.5" width="269" height="139.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYg-68-49N">
+                                                <rect key="frame" x="0.0" y="0.0" width="269" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eh8-L9-oq5">
+                                                <rect key="frame" x="0.0" y="96.5" width="269" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aLl-B5-NCj">
+                                        <rect key="frame" x="0.0" y="335" width="269" height="76"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNm-5t-v17">
+                                                <rect key="frame" x="0.0" y="0.0" width="269" height="30"/>
+                                                <color key="backgroundColor" red="0.63934866099999998" green="0.96820529840000003" blue="0.82260374169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Choose image"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f3k-Zh-lzL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75h-xl-JbW">
+                                                <rect key="frame" x="0.0" y="46" width="269" height="30"/>
+                                                <color key="backgroundColor" red="0.63934866099999998" green="0.96820529840000003" blue="0.82260374169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Upload image"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1p9-xW-Yh3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aLl-B5-NCj" firstAttribute="top" secondItem="B2L-dJ-8h1" secondAttribute="top" constant="335" id="P0Z-bd-Oax"/>
+                                    <constraint firstAttribute="width" secondItem="B2L-dJ-8h1" secondAttribute="height" multiplier="150:229" id="wmp-BD-06t"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B2L-dJ-8h1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J32-XC-79v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2L-dJ-8h1" secondAttribute="bottom" constant="54" id="gcl-Cv-RHB"/>
+                            <constraint firstItem="B2L-dJ-8h1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="iHK-Tn-s0O"/>
+                            <constraint firstItem="B2L-dJ-8h1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ts3-eG-Eak"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Image uploader" id="LO0-7K-X5b"/>
+                    <connections>
+                        <outlet property="imageView" destination="SLj-IV-PeN" id="woQ-wg-myA"/>
+                        <outlet property="urlTextField" destination="eh8-L9-oq5" id="oDG-eZ-9is"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1134.375" y="61.267605633802816"/>
+        </scene>
+        <!--Jokes-->
+        <scene sceneID="ENw-4b-hoy">
+            <objects>
+                <viewController id="mU0-a4-jv7" customClass="JokesViewController" customModule="ImageUploader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lCA-R8-8V3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Joke text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cka-na-kEY">
+                                <rect key="frame" x="16" y="81" width="288" height="357"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dG-CE-N0B">
+                                <rect key="frame" x="35" y="461" width="250" height="30"/>
+                                <color key="backgroundColor" red="0.63934866099999998" green="0.96820529840000003" blue="0.82260374169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="SVK-d0-8Vm"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="New joke!"/>
+                                <connections>
+                                    <action selector="newJokeTapped" destination="mU0-a4-jv7" eventType="touchUpInside" id="9HO-bD-AJo"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Wst-Hn-e9x">
+                                <rect key="frame" x="150" y="249.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="daR-jq-oIx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cka-na-kEY" firstAttribute="centerX" secondItem="daR-jq-oIx" secondAttribute="centerX" id="K5V-09-8kS"/>
+                            <constraint firstItem="cka-na-kEY" firstAttribute="centerY" secondItem="daR-jq-oIx" secondAttribute="centerY" id="Srl-Cx-kek"/>
+                            <constraint firstItem="Wst-Hn-e9x" firstAttribute="centerX" secondItem="daR-jq-oIx" secondAttribute="centerX" id="XZo-QF-R7F"/>
+                            <constraint firstItem="5dG-CE-N0B" firstAttribute="centerX" secondItem="daR-jq-oIx" secondAttribute="centerX" id="aYB-ou-0gY"/>
+                            <constraint firstItem="5dG-CE-N0B" firstAttribute="top" secondItem="cka-na-kEY" secondAttribute="bottom" constant="23" id="f4j-IN-XqG"/>
+                            <constraint firstItem="cka-na-kEY" firstAttribute="leading" secondItem="lCA-R8-8V3" secondAttribute="leadingMargin" id="n2F-Ia-fiK"/>
+                            <constraint firstItem="cka-na-kEY" firstAttribute="top" secondItem="daR-jq-oIx" secondAttribute="top" constant="81" id="nZg-h1-Ybw"/>
+                            <constraint firstItem="Wst-Hn-e9x" firstAttribute="centerY" secondItem="daR-jq-oIx" secondAttribute="centerY" id="yiL-Fz-wCz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Jokes" id="S6R-a1-n3A"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Wst-Hn-e9x" id="06P-gd-ikl"/>
+                        <outlet property="jokeTextView" destination="cka-na-kEY" id="vJX-2i-mqP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8q-sg-XOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158.75" y="786.97183098591552"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oTH-r2-Vhg">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7zC-2w-XVf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Adp-MK-c76">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BFs-66-K3g"/>
+                        <segue destination="mU0-a4-jv7" kind="relationship" relationship="viewControllers" id="aqq-qs-Mar"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5j-f0-Wx8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="423.59154929577466"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

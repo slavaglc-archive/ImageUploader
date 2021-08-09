@@ -1,9 +1,4 @@
-//
-//  SceneDelegate.swift
-//  ImageUploader
-//
-//  Created by slava on 07.08.2021.
-//
+
 
 import UIKit
 
